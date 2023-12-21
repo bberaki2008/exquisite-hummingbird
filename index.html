@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- connecting the external stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./assests/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assests/css/style.css">
   </head>
   <body>
+    <!-- wraps the header,  main and footer -->
     <div class="wrapper">
+      <!-- header - section -->
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
+      <!-- wraps the main and footer -->
+      <section class="card">
+        <!-- main - section -->
+        <main>
+          <article class="card-header">
+            <h2>Generate a Password</h2>
+          </article>
+          <article class="card-body">
+            <textarea
+              readonly
+              id="password"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
+          </article>
+          </main>
+          <!-- footer section -->
+        <footer class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
+        </footer>
+      </section>
     </div>
     <script src="script.js"></script>
   </body>
