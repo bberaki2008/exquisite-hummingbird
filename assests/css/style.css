@@ -8,7 +8,7 @@
   --light-gray: #c0c7cf;
   --beige-color: #e7e9eb;;
 }
-
+/* Universal selector */
 *, 
 *::before,
 *::after {
