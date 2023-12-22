@@ -78,8 +78,7 @@ header {
   border: none;
   background-color: var(--red-hsl-color);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0 1px 1px
-    0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px, rgba(0, 0, 0, 0.2) 0 1px 1px 0;
   color: var(--white-hsl-color);
   font-size: 22px;
   line-height: 22px;
