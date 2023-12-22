@@ -20,7 +20,7 @@ N/A
 
 ## Screenshot
 
-![Alt Screenshoot of password generator](./assets/img/passwordGenerator.png)
+![Alt Screenshoot of password generator](./assests/img/passwordGenerator.png)
 
 ## License
 
