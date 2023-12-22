@@ -4,7 +4,7 @@
 
 ## Description
 
-This password generator was created to generate password for users based on their selected criteria to generate it. They can select alphanumeric characters, special characters and can also select the length of the password between 8 and 128 characters. Once it gets those information from the userinput then it will generate a random passwor for the user.
+This password generator was created to generate password for users based on their selected criteria received. They can select alphanumeric characters, special characters and can also select the length of the password between 8 and 128 characters. Once it gets those information from the userinput then it will generate a random password for the users.
 
 ## Installation
 
