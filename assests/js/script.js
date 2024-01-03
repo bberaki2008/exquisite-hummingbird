@@ -5,7 +5,6 @@ let generateBtn = document.querySelector("#generate");
 function writePassword() {
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
@@ -34,77 +33,44 @@ function generatePassword() {
 
 // validates userinput and make decision whether to include number characters in the  password or not
 function getNumbers() {
-  let response = prompt("Would you like in include Numbers?", "YES or NO");
-  let responseClean=response.toLowerCase();
- if(responseClean !=="no" && responseClean !=="yes"){
-    alert("Please enter 'YES' or 'NO'");
-    getNumbers();
-  }
-  if (responseClean==="yes") {
+  let response = window.confirm("Would you like to include number characters in the password?");
+  if (response) 
     passwordCharacters=passwordCharacters.concat(numbs);   
-  }
-   else if(responseClean==="no") {
-    passwordCharacters;
-  }
 }
 
 // validates userinput and make decision whether to include capital letters characters in the  password or not
 function getUpperLetters() {
-  let response = prompt("Would you like to include capital letters in the password?", "YES or NO");
-  let responseClean=response.toLowerCase();
- if(responseClean!=="no" && responseClean!=="yes"){
-    alert("Please enter 'YES' or 'NO'");
-    getUpperLetters();
-  }
-  
-  if (responseClean==="yes") {
+  let response = window.confirm("Would you like to include capital letters in the password?");
+  if (response) 
     passwordCharacters=passwordCharacters.concat(capLetters);
-  }
-  else if(responseClean==="no") {
+  else 
     passwordCharacters;
-  }
 }
 
 // validates userinput and make decision whether to include small letters characters in the  password or not
 function getSmallLetters() {
-  let response = prompt("Would you like to include small letters in the password?", "YES or NO");
-  let responseClean=response.toLowerCase();
- if(responseClean!=="no" && responseClean!=="yes"){
-    alert("Please enter 'YES' or 'NO'");
-    getSmallLetters();
-  }
-  if (responseClean==="yes") {
+  let response = window.confirm("Would you like to include small letters in the password?");
+  if (response) 
     passwordCharacters=passwordCharacters.concat(smallLetters);
-  }
-   else if(responseClean==="no") {
+  else 
     passwordCharacters;
-  }
 }
 
 // validates userinput and make decision whether to include special characters in the  password or not
 function getSpecialCharacters() {
-  let response = prompt("Would you like to include special characters in the password?", "YES or NO");
-  let responseClean=response.toLowerCase();
- if(responseClean!=="no" && responseClean!=="yes"){
-    alert("Please enter 'YES' or 'NO'");
-    getSpecialCharacters();
-    }
-  if (responseClean==="yes") {
+  let response = window.confirm("Would you like to include special characters in the password?");
+  if(response)
     passwordCharacters=passwordCharacters.concat(specialChars);
-  }
-   else if(responseClean==="no") {
+  else
     passwordCharacters;
-  }
 }
 
-// user needes to input a number to determin the password length to be generated
+// user needes to input a number to determine the password length to be generated
 function getPasswordLength() {
   let response = parseInt(prompt("Enter a number between 8 and 128", ""));
- if(response>=8 && response<=128){
+  if(response>=8 && response<=128)
     passwordlength= response;
-    }
-  else{
-    alert("Please enter a number between 8 and 128");
-     getPasswordLength();
-  }
+  else
+    // if the user don't enter a valued number(password length) between 8 and 128 including 8 and 128 then password length set to a default value of 25.
+    passwordlength = 25;
 }
